@@ -7,7 +7,6 @@ public class Main {
                 .setGarden(true)
                 .setSwimmingPool(false)
                 .build();
-
         System.out.println(house);
     }
 }

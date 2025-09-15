@@ -1,9 +1,9 @@
 public class House {
-    private final int floors;
-    private final int rooms;
-    private final boolean hasGarage;
-    private final boolean hasGarden;
-    private final boolean hasSwimmingPool;
+    int floors;
+    private int rooms;
+    private boolean hasGarage;
+    private boolean hasGarden;
+    private boolean hasSwimmingPool;
 
     // private constructor here
     private House(Builder builder) {
@@ -34,7 +34,6 @@ public class House {
     public boolean hasSwimmingPool() {
         return hasSwimmingPool;
     }
-
     @Override
     public String toString() {
         return "House{" +
@@ -44,6 +43,22 @@ public class House {
                 ", hasGarden=" + hasGarden +
                 ", hasSwimmingPool=" + hasSwimmingPool +
                 '}';
+    }
+
+    public void setFloors(int floors) {
+        this.floors = floors;
+    }
+    public void setRooms(int rooms) {
+        this.rooms = rooms;
+    }
+    public void setHasGarage(boolean hasGarage) {
+        this.hasGarage = hasGarage;
+    }
+    public void setHasGarden(boolean hasGarden) {
+        this.hasGarden = hasGarden;
+    }
+    public void setHasSwimmingPool(boolean hasSwimmingPool) {
+        this.hasSwimmingPool = hasSwimmingPool;
     }
 
     // builder class
